@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario 2</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="digite seu nome">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="digite seu email">
+                </div>
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" placeholder="digite seu número">
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Dados de cadastro</legend>
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" placeholder="Rua" id="endereço">
+                </div>
+                <div>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" placeholder="bairro">
+                </div>
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" list="cidades"> 
+                    <datalist id="cidades"> <!--melhor que o select-->
+                        <option>Fortaleza</option>
+                        <option>Fortim</option>
+                        <option>Caucaia</option>
+                        <option>Aquiraz</option>
+                        <option>Eusebio</option>
+                        <option>Maracanaú</option>
+                        <option>Maranguape</option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="estado">Estados:</label>
+                    <select id="estado">
+                        <option disabled selected>Escolha seu estado</option>
+                        <option>Ceará</option>
+                        <option>Acre</option>
+                        <option>Bahia</option>
+                        <option>Distrito Federal</option>
+                    </select>
+                </div>              
+            </fieldset>
+            <fieldset>
+                <legend>Dados do curso</legend>
+                <div>
+                    <label>Cursos:</label>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                Fullstack
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                Marketing
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                UI/UX
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                Data Analytics
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <label>Turno</label>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="turno">Manhã
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="turno">Tarde
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="turno">Noite
+                            </label>
+                        </li>
+
+                    </ul>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
